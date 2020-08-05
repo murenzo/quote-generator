@@ -11,4 +11,84 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23000000' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: #000;
     font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+    font-size: 2.75rem;
+}
+
+.long-quote {
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.quote-author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #333;
+    outline: none;
+    padding: 0.8rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: translate(0 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+
+    .quote.text {
+        font-size: 2.5rem;
+    }
 }
